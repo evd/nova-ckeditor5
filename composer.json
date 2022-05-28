@@ -1,0 +1,35 @@
+{
+    "name": "realevd/nova-ckeditor5",
+    "description": "CkEditor5 for Laravel Nova",
+    "keywords": [
+        "laravel",
+        "ckeditor",
+        "ckeditor 5",
+        "rich text editor",
+        "WYSIWYG Editor",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0.2",
+        "laravel/framework": "^8.40.0|^9.0",
+        "spatie/image": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Realevd\\NovaCkeditor5\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Realevd\\NovaCkeditor5\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
