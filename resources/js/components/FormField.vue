@@ -37,6 +37,9 @@ export default {
         handleEditorSync() {
             this.handleChange(this.$options.editor.getData())
         },
+        uuid() {
+            return crypto.getRandomValues(new Uint32Array(4)).join('-')
+        },
     },
     created() {
         this.$options.uuid = this.uuid()
@@ -91,9 +94,6 @@ export default {
             .catch((e) => {
                 this.$toasted.show(e.toString(), {type: 'error'})
             })
-    },
-    uuid() {
-        return crypto.getRandomValues(new Uint32Array(4)).join('-')
     },
     beforeDestroy() {
         if (this.$options.editor) {
