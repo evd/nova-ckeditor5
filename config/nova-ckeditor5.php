@@ -5,8 +5,8 @@ return [
     'height' => 300,
 
     /** Language */
-    'lang' => 'ru',
-    'content-lang' => 'ru',
+    'lang' => 'en',
+    'content-lang' => 'en',
 
     'storage' => [
         /** Disk used for uploaded attachments */
