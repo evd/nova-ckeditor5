@@ -10,6 +10,8 @@ class CkEditor5 extends Field
 {
     use Expandable;
 
+    public $showOnIndex = false;
+
     public $component = 'nova-ckeditor5';
 
     public string $language;
